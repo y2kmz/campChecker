@@ -15,13 +15,13 @@ def checkArea(areaText):
         driver.switch_to.window(driver.window_handles.pop())
 
         campSite = driver.find_element_by_name("CAMP_JO")
-        Select(campSite).select_by_visible_text("無印良品カンパーニャ嬬恋キャンプ場")
+        Select(campSite).select_by_visible_text("嬬恋キャンプ場")
         driver.implicitly_wait(1)
 
         siteYear = driver.find_element_by_name("SITE_YEA")
         siteMonth = driver.find_element_by_name("SITE_MON")
         Select(siteYear).select_by_value('2021')
-        Select(siteMonth).select_by_value('7')
+        Select(siteMonth).select_by_value('8')
 
         driver.find_element_by_name("SEARCH_SITE").click()
         driver.implicitly_wait(1)
